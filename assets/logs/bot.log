@@ -1,0 +1,8 @@
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO,
+    handlers=[
+        logging.FileHandler("assets/logs/bot.log"),  # Guarda logs en un archivo
+        logging.StreamHandler()  # También los muestra en consola
+    ]
+)
